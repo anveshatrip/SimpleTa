@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>To-Do List App</title>
+<link rel="stylesheet" href="stylefile.css" />
+</head>
+
+<body>
+<div id="tasklist" class="tasec">
+    <h2>to-do list</h2>
+
+    <div class="stats-bar">
+      <span>Total: <strong id="totalCount">0</strong></span>
+      <span>Done: <strong id="doneCount">0</strong></span>
+      <span>Pending: <strong id="pendingCount">0</strong></span>
+    </div>
+
+    <div class="table-box">
+      <table class="task-table">
+          <tr>
+            <th>No.</th>
+            <th>Task</th>
+            <th>Status</th>
+	    <th>Delete</th>
+          </tr>
+        <tbody id="taskTableBody">
+        </tbody>
+      </table>
+    </div>
+    <p id="emptyMsg" class="empty-msg">No tasks yet!</p>
+       <div class="add-row">
+      <input type="text" id="taskTitle" placeholder="Enter a new task..." />
+      <button onclick="addTask()">&#43; Add Task</button>
+    </div>
+
+  <script src="JSfile.js"></script>
+</body>
+</html>
+
